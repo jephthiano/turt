@@ -1,0 +1,4 @@
+<?php
+//ads FUNCTION STARTS
+//ads FUNCTION ENDS
+?>

@@ -1,0 +1,11 @@
+# FOR URL REWRITING
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for 
+RewriteRule ^verify_payment/reference=([\w]*)/?$ verify_payment.enc.php?reference=$1
+
+# for index
+RewriteRule ^([\w]+)/([\d]+)/?$ index.php?ty=$1&cid=$2
+
+</IfModule>

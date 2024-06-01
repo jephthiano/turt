@@ -1,0 +1,11 @@
+# FOR URL REWRITING
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for notification
+#RewriteRule ^notification/?$ notification.enc.php
+RewriteRule ^([\w]+)/?$ notification.enc.php?type=$1
+
+# for index
+RewriteRule ^/?$ index.php
+</IfModule>

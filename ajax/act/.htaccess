@@ -1,0 +1,86 @@
+# FOR URL REWRITING
+# ACT
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for change image
+RewriteRule ^ci/?$ change_image.xhr.php
+
+# for set user cookie data
+RewriteRule ^sucd/?$ set_user_cookie_data.xhr.php
+
+# for signup process mobile number
+RewriteRule ^spmn/?$ signup_process_mobile_number.xhr.php
+
+# for signup process code
+RewriteRule ^spc/?$ signup_process_code.xhr.php
+
+# for signup process user data
+RewriteRule ^spud/?$ signup_process_user_data.xhr.php
+
+# for login process id
+RewriteRule ^lpid/?$ login_process_id.xhr.php
+
+# for login process user data
+RewriteRule ^lpld/?$ login_process_login_data.xhr.php
+
+# for forgot_password process id
+RewriteRule ^fppid/?$ forgot_password_process_id.xhr.php
+
+# for forgot_password process medium
+RewriteRule ^fppm/?$ forgot_password_process_medium.xhr.php
+
+# for forgot_password process code
+RewriteRule ^fppc/?$ forgot_password_process_code.xhr.php
+
+# for forgot_password process password
+RewriteRule ^fppp/?$ forgot_password_process_password.xhr.php
+
+# for log out
+RewriteRule ^lg/([\w]*)/([\d]*)/?$ log_out.xhr.php?type=$1&id=$2
+
+# for update user profile
+RewriteRule ^uup/?$ update_user_profile.xhr.php
+
+# for change password
+RewriteRule ^cp/?$ change_password.xhr.php
+
+# for update username
+RewriteRule ^upu/?$ update_username.xhr.php
+
+# for verify password
+RewriteRule ^vp/?$ verify_password.xhr.php
+
+# for verify user login data
+RewriteRule ^vuld/?$ verify_user_login_data.xhr.php
+
+# for verify code
+RewriteRule ^vc/?$ verify_code.xhr.php
+
+# for delete or deactivate acccount
+RewriteRule ^dda/?$ delete_or_deactivate_account.xhr.php
+
+# for insert and update user last refresh
+RewriteRule ^iauulr/([\w]+)/?$ insert_and_update_user_last_refresh.xhr.php?val=$1
+
+# for follow and unfollow 
+RewriteRule ^fau/([\w]*)/([\w]*)/([\d]*)/?$ follow_and_unfollow.xhr.php?type=$1&act=$2&id=$3
+
+# for block and unblock 
+RewriteRule ^bau/([\w]*)/([\w]*)/([\d]*)/?$ block_and_unblock.xhr.php?type=$1&act=$2&id=$3
+
+# for dark mode settings
+RewriteRule ^dms/?$ dark_mode_settings.xhr.php
+
+# for update user settings
+RewriteRule ^uus/([\w]*)/([\w]*)/?$ update_user_settings.xhr.php?type=$1&val=$2
+
+# for report content
+RewriteRule ^rpc/([\w]*)/([\d]*)/([\w\s\'\/]*)/?$ report_content.xhr.php?type=$1&id=$2&report=$3
+
+# chnage notification type status
+RewriteRule ^cnts/([\w]+)/?$ change_notification_type_status.xhr.php?type=$1
+
+# for send message
+RewriteRule ^sm/?$ send_message.xhr.php
+</IfModule>

@@ -1,0 +1,57 @@
+# FOR URL REWRITING
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+# for edit profile
+RewriteRule ^profile/?$ profile.enc.php
+
+# for settings and privacy
+RewriteRule ^settings_privacy/?$ settings_privacy.enc.php
+
+# for blocked account
+RewriteRule ^blocked_accounts/?$ blocked_accounts.enc.php
+
+# for manage_ads
+RewriteRule ^manage_ads/?$ manage_ads.enc.php
+
+# for account settings
+RewriteRule ^account/?$ account.enc.php
+
+# for security and account
+RewriteRule ^security/?$ security.enc.php
+
+# for privacy
+RewriteRule ^privacy/?$ privacy.enc.php
+
+# for notification
+RewriteRule ^notification/?$ notification.enc.php
+
+# for 2fa
+RewriteRule ^2fa/?$ 2fa.enc.php
+
+# for change username
+RewriteRule ^update_username/?$ update_username.enc.php
+
+# for update email
+RewriteRule ^update_email/?$ update_email.enc.php
+
+# for update mobile number
+RewriteRule ^update_mobile_number/?$ update_mobile_number.enc.php
+
+# for deactivate account
+RewriteRule ^deactivate_account/?$ deactivate_account.enc.php
+
+# for delete account
+RewriteRule ^delete_account/?$ delete_account.enc.php
+
+# for session
+RewriteRule ^sessions/?$ sessions.enc.php
+
+# for change password
+RewriteRule ^change_password/?$ change_password.enc.php
+
+# for index
+RewriteRule ^([\w]*)/?$ index.php
+</IfModule>
+
+

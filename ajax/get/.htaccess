@@ -1,0 +1,35 @@
+# FOR URL REWRITING
+# ACT
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for check username email or number
+RewriteRule ^cuen/([\w\s]+)/([\w\s\@\.]+)/?$ check_username_email_or_number.xhr.php?type=$1&value=$2
+
+# for get edit profile image data
+RewriteRule ^gepid/([\w]+)/?$ get_edit_profile_image_data.xhr.php?value=$1
+
+# for get follower counter
+RewriteRule ^gfc/([\d]+)/?$ get_follower_counter.xhr.php?id=$1
+
+# for get follower counter
+RewriteRule ^gud/([\w]+)/([\w\s]+)/?$ get_user_data.xhr.php?type=$1&id=$2
+
+# for get toggle button
+RewriteRule ^gtb/([\w]+)/?$ get_toggle_button.xhr.php?value=$1
+
+# for get real time noti
+RewriteRule ^grtn/([\w]+)/?$ get_real_time_noti.xhr.php?type=$1
+
+# for get message inbox data
+RewriteRule ^gmid/?$ get_message_inbox_data.xhr.php
+
+# for get new message contact
+RewriteRule ^gnmc/?$ get_new_message_contact.xhr.php
+
+# for get explore typing result
+RewriteRule ^getr/?$ get_explore_typing_result.xhr.php
+
+# for get chat data
+RewriteRule ^gcd/([\d]+)/?$ get_chat_data.xhr.php?id=$1
+</IfModule>

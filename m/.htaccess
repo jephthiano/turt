@@ -1,0 +1,13 @@
+# FOR URL REWRITING
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for search
+RewriteRule ^search/?$ search.enc.php
+
+# for messages
+RewriteRule ^messages/([\w]*)/?$ messages.enc.php?cid=$1
+
+# for index
+RewriteRule ^([\w]*)/?$ index.php
+</IfModule>

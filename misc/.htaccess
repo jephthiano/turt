@@ -1,0 +1,31 @@
+# FOR URL REWRITING
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for help
+RewriteRule ^help/?$ help.enc.php
+
+# for about_us
+RewriteRule ^about_us/?$ about_us.enc.php
+
+# for faq
+RewriteRule ^faq/?$ faq.enc.php
+
+# for feedback
+RewriteRule ^feedback/?$ feedback.enc.php
+
+# for contact us
+RewriteRule ^contact_us/?$ contact_us.enc.php
+
+# for how_it_works
+RewriteRule ^how_it_works/?$ how_it_works.enc.php
+
+# for privacy_policy
+RewriteRule ^privacy_policy/?$ privacy_policy.enc.php
+
+# for terms_of_service
+RewriteRule ^terms_of_service/?$ terms_of_service.enc.php
+
+# for why_join us
+RewriteRule ^why_join_us/?$ why_join_us.enc.php
+</IfModule>
